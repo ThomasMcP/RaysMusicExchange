@@ -1,4 +1,4 @@
-public class Guitar extends Instrument {
+public class Guitar extends Instrument implements IPlay {
 
     private GuitarType type;
     private int numberOfStrings;
@@ -17,4 +17,9 @@ public class Guitar extends Instrument {
     public int getNumberOfStrings() {
         return numberOfStrings;
     }
+
+    public String play(Instrument instrument) {
+        return "Guitar playing";
+    }
+
 }
