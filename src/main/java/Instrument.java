@@ -1,4 +1,4 @@
-public class Instrument {
+public abstract class Instrument {
     private InstrumentFamilyType family;
     private InstrumentColourType colour;
     private InstrumentMakeType make;
