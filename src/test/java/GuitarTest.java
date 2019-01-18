@@ -9,7 +9,7 @@ public class GuitarTest
 
     @Before
     public void before(){
-        guitar = new Guitar(InstrumentFamilyType.STRINGS, InstrumentColourType.BLUE, InstrumentMakeType.FENDER, InstrumentModelType.STRATOCASTER, 4, GuitarType.ELECTRIC);
+        guitar = new Guitar(InstrumentFamilyType.STRINGS, InstrumentColourType.BLUE, InstrumentMakeType.FENDER, InstrumentModelType.STRATOCASTER, 500, 4, GuitarType.ELECTRIC);
     }
 
     @Test
@@ -40,5 +40,10 @@ public class GuitarTest
     @Test
     public void canGetGuitarType(){
         assertEquals(GuitarType.ELECTRIC, guitar.getType());
+    }
+
+    @Test
+    public void canGetPrice(){
+        assertEquals(500, guitar.getPrice());
     }
 }

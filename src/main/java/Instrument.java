@@ -3,12 +3,14 @@ public abstract class Instrument {
     private InstrumentColourType colour;
     private InstrumentMakeType make;
     private InstrumentModelType model;
+    private int price;
 
-    public Instrument(InstrumentFamilyType family, InstrumentColourType colour, InstrumentMakeType make, InstrumentModelType model) {
+    public Instrument(InstrumentFamilyType family, InstrumentColourType colour, InstrumentMakeType make, InstrumentModelType model, int price) {
         this.family = family;
         this.colour = colour;
         this.make = make;
         this.model = model;
+        this.price = price;
     }
 
     public InstrumentFamilyType getFamily() {
@@ -25,5 +27,9 @@ public abstract class Instrument {
 
     public InstrumentModelType getModel() {
         return model;
+    }
+
+    public int getPrice(){
+        return price;
     }
 }
