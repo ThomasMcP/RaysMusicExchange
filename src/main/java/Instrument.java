@@ -32,4 +32,6 @@ public abstract class Instrument {
     public int getPrice(){
         return price;
     }
+
+
 }
